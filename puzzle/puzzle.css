@@ -362,7 +362,8 @@ footer {
   border-radius: 10px;
 }
 
-#closePreview {
+#closePreview,
+#closeGiftModal {
   position: absolute;
   top: 8px;
   right: 12px;
