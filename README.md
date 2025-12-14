@@ -12,6 +12,7 @@
 - [Slides]()
 - [Website]()
 - [Demo]()
+- [Development Journal]()
 
 ## Project Summary:
 

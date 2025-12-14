@@ -82,8 +82,8 @@ body {
   }
   
   input[type="submit"]:hover {
-    background-color: var(--header-bg);
-    color: var(--text-color);
+    background-color: var(--accent-hover-text);
+    color: var(--accent);
   }
   
   .center {
@@ -104,6 +104,6 @@ body {
   }
 
   a:hover {
-    color: var(--page-bg);
+    color: var(--accent-hover-text);
     text-decoration: underline;
   }
