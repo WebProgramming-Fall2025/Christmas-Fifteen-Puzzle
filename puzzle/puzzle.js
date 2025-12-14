@@ -222,6 +222,20 @@ document.addEventListener("DOMContentLoaded", function () {
   btnpopup.addEventListener("click", function () {
     popup.classList.add("hidden");
   });
+
+  const previewBtn = document.getElementById("previewBtn");
+  const previewModal = document.getElementById("previewModal");
+  const previewImage = document.getElementById("previewImage");
+  const closePreview = document.getElementById("closePreview");
+
+  previewBtn.addEventListener("click", function () {
+    previewImage.src = imageSelect.value;
+    previewModal.classList.remove("hidden");
+  });
+
+  closePreview.addEventListener("click", function () {
+    previewModal.classList.add("hidden");
+  });
 });
 
 function beginWinAnimation() {
