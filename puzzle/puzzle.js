@@ -122,11 +122,11 @@ document.addEventListener("DOMContentLoaded", function () {
     sizeSelection.disabled = true;
 
     const howToPlay = document.getElementById("how-to-play");
-    howToPlay.innerHTML = `<marquee scrollamount="30">
+    howToPlay.innerHTML = `<marquee scrollamount="8">
             <img src="../assets/img/image1.jpg" width="650px" height="400px"/>
             <img src="../assets/img/image2.jpg" width="650px" height="400px"/>
             <img src="../assets/img/image3.jpg" width="650px" height="400px"/>
-             <img src="../assets/img/image4.jpg" width="650px" height="400px"/>
+            <img src="../assets/img/image4.jpg" width="650px" height="400px"/>
         </marquee>`;
   };
 
