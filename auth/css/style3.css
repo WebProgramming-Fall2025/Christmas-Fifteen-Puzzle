@@ -1,8 +1,20 @@
+/* Root Colors */
+:root {
+  --page-bg: rgb(2, 150, 100); 
+  --header-bg: rgb(110, 21, 17); 
+  --nav-bg: rgb(2, 150, 100);
+  --accent: rgb(230, 44, 49); 
+  --accent-hover-text: rgb(0, 117, 73); 
+  --text-color: rgb(253, 233, 206);
+  --black: #000000;
+  --off-white: rgb(253, 233, 206);
+}
+
 body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f9ff;
+    background-color: var(--page-bg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -16,7 +28,7 @@ body {
     max-width: 1000px;
     margin: 20px auto;
     padding: 2rem;
-    background-color: #fff5d7;
+    background-color: var(--nav-bg);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     text-align: center;
@@ -25,7 +37,7 @@ body {
   .welcome-note {
     font-size: 20px;
     font-weight: bold;
-    color: #e195ab;
+    color: var(--accent);
     margin-bottom: 1.5rem;
   }
   
@@ -33,7 +45,7 @@ body {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #e195ab;
+    border: 1px solid var(--accent);
     border-radius: 5px;
     margin-bottom: 20px;
   }
@@ -46,18 +58,18 @@ body {
     overflow-y: auto;
     justify-content: center;
     padding: 10px;
-    background-color: #fff5d7;
-    border: 1px solid #e195ab;
+    background-color: var(--nav-bg);
+    border: 1px solid var(--accent);
     border-radius: 10px;
   }
   
   .property-card {
-    border: 1px solid #e195ab;
+    border: 1px solid var(--accent);
     border-radius: 10px;
     padding: 15px;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-    background-color: #ffcce1;
+    background-color: var(--header-bg);
     width: 220px;
     height: 400px;
     box-sizing: border-box;
@@ -82,7 +94,7 @@ body {
   
   input[type="submit"],
   #logout {
-    background-color: #e195ab;
+    background-color: var(--accent);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -94,17 +106,17 @@ body {
   
   input[type="submit"]:hover,
   #logout:hover {
-    background-color: #ffcce1;
-    color: #333;
+    background-color: var(--header-bg);
+    color: var(--text-color);
   }
   
   #logout {
     margin-top: 2rem;
-    color: #f2f9ff;
+    color: var(--accent-hover-text);
   }
-  
+
   #logout a {
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
   }
   

@@ -1,8 +1,20 @@
+/* Root Colors */
+:root {
+  --page-bg: rgb(2, 150, 100); 
+  --header-bg: rgb(110, 21, 17); 
+  --nav-bg: rgb(2, 150, 100);
+  --accent: rgb(230, 44, 49); 
+  --accent-hover-text: rgb(0, 117, 73); 
+  --text-color: rgb(253, 233, 206);
+  --black: #000000;
+  --off-white: rgb(253, 233, 206);
+}
+
 body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f9ff;
+    background-color: var(--page-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +23,7 @@ body {
   }
   
   .registration {
-    background-color: #fff5d7;
+    background-color: var(--nav-bg);
     padding: 2rem;
     border-radius: 12px;
     width: 50%;
@@ -20,7 +32,7 @@ body {
   }
   
   .error {
-    color: #e195ab;
+    color: var(--accent);
     font-size: 12pt;
     margin-bottom: 1rem;
   }
@@ -41,8 +53,8 @@ body {
   .icon {
     width: 40px;
     height: 35px;
-    background-color: #ffcce1;
-    border: 1px solid #e195ab;
+    background-color: var(--header-bg);
+    border: 1px solid var(--accent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,14 +64,14 @@ body {
   
   input {
     padding: 10px;
-    border: 1px solid #e195ab;
+    border: 1px solid var(--accent);
     border-radius: 5px;
     width: calc(100% - 50px);
     outline: none;
   }
   
   input[type="submit"] {
-    background-color: #e195ab;
+    background-color: var(--accent);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -70,8 +82,8 @@ body {
   }
   
   input[type="submit"]:hover {
-    background-color: #ffcce1;
-    color: #333;
+    background-color: var(--header-bg);
+    color: var(--text-color);
   }
   
   .center {
@@ -86,12 +98,12 @@ body {
   }
   
   a {
-    color: #e195ab;
+    color: var(--accent);
     text-decoration: none;
     transition: color 0.3s ease;
   }
-  
+
   a:hover {
-    color: #ffcce1;
+    color: var(--header-bg);
     text-decoration: underline;
   }
