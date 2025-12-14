@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="puzzle.css" type="text/css" rel="stylesheet" />
+    <title>Christmas Fifteen Puzzle</title>
+    <script src="puzzle.js"></script>
+  </head>
+
+  <body>
+    <video
+      class="video-bg"
+      id="vid"
+      autoplay
+      muted
+      loop
+      src="../assets/music/background.mp4"
+    ></video>
+    <header id="header">
+      <div class="header__box">
+        <div class="header__logo" aria-label="Logo"></div>
+        <div id="title">Welcome to our Christmas Fifteen Puzzle!</div>
+        <nav class="header__navbar">
+          <a
+            href="../homepage/index.html"
+            target="_self"
+            rel="noopener noreferrer"
+            class="header__link"
+            >Homepage</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <p id="caption">
+      Welcome to the classic <strong>Fifteen Puzzle</strong> game with <strong>Christmas</strong> theme! Sharpen your <strong>problem-solving</strong>
+      skills by arranging tiles in numerical order. Select your preferences and
+      start playing!
+    </p>
+
+    <main id="main">
+      <div class="main-container" id="left-container">
+        <div id="selectImg">
+          <label id="imgTitle" for="imageSelect">Choose a background:</label>
+          <select id="imageSelect">
+            <option value="../assets/img/image1.jpg" selected>
+              Snow Village
+            </option>
+            <option value="../assets/img/image2.jpg">Santa Workshop</option>
+            <option value="../assets/img/image3.jpg">Christmas Tree</option>
+            <option value="../assets/img/image4.jpg">Winter Night</option>
+          </select>
+        </div>
+
+        <div id="selectSize">
+          <label id="gridSizeTitle" for="gridSizeSelect"
+            >Select puzzle size:</label
+          >
+          <select id="gridSizeSelect">
+            <option value="3" selected>3x3 (Easy)</option>
+            <option value="4">4x4 (Classic)</option>
+            <option value="6">6x6 (Intermediate)</option>
+            <option value="8">8x8 (Advanced)</option>
+            <option value="10">10x10 (Expert)</option>
+          </select>
+        </div>
+
+        <button id="shuffle">Shuffle</button>
+        <button id="btn-reset">Reset</button>
+      </div>
+
+      <div class="main-container" id="game-container">
+        <div id="puzzle-container"></div>
+      </div>
+
+      <div class="main-container" id="right-container">
+        <div id="highscore">
+          Best Moves:
+          <div id="high-move">0</div>
+        </div>
+        <div id="count-text">
+          Moves Made:
+          <div id="count-move">0</div>
+        </div>
+        <div id="count-time">
+          Time Elapsed:
+          <div id="timer">0s</div>
+        </div>
+      </div>
+    </main>
+
+    <div class="content">
+      <h2>How to Play</h2>
+          <p>
+            The <strong>Fifteen Puzzle</strong> (also known as a Sliding Puzzle)
+            is a timeless classic that challenges your logic and patience. The
+            game consists of a <strong>4x4 grid</strong> of numbered tiles, with
+            <strong>one square left empty</strong>.
+          </p>
+          <p>Your goal is simple but tricky:</p>
+          <ol>
+            <li>
+              Rearrange the tiles so that they are in numerical order from
+              <strong>1 to 15</strong>, with the empty square at the
+              bottom-right corner.
+            </li>
+            <li>
+              To move a tile, slide any tile adjacent to the empty square into
+              the empty space.
+            </li>
+            <li>
+              Keep sliding tiles until the numbers are arranged correctly!
+            </li>
+          </ol>
+    </div>
+
+    <footer class="text-center site-footer">
+        <div id="copyright">
+            <p id="htmlvalidator">
+                <a href="http://validator.w3.org/check/referer"
+                ><img
+                    src="../assets/img/Valid_XHTML.png"
+                    alt="Valid XHTML 1.0!"
+                    height="31"
+                    width="88"
+                /></a>
+            </p>
+            <p id="cssvalidator">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img
+                    src="../assets/img/Valid_CSS.png"
+                    alt="Valid CSS!"
+                    height="31"
+                    width="88"
+                />
+                </a>
+            </p>
+
+            <p>Copyright &copy; Fall 2025</p>
+            <p>Georgia State University - Web Programming</p>
+            <p>Sophie Nguyen - Cristofer Herrera-Mejia - Karni Rathod</p>
+        </div>
+    </footer>
+
+    <div class="pop-up">
+      <h1 class="pop-up__header">
+        Click below to begin your puzzle adventure!
+      </h1>
+      <button class="pop-up__btnBegin"></button>
+    </div>
+  </body>
+</html>

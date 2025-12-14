@@ -1,0 +1,333 @@
+/* Root Colors */
+:root {
+  --color-blue: rgb(110, 21, 17);
+  --color-green: rgb(0, 117, 73);
+  --color-yellow: rgb(2, 150, 100);
+  --color-red: rgb(230, 44, 49);
+  --color-black: #000000;
+  --color-white: rgb(253, 233, 206);
+}
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  overflow: scroll;
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--color-white);
+}
+
+header {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  padding: 1rem;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-blue);
+  border-radius: 20%;
+  background-image: url(../assets/img/logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__navbar a {
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.header__navbar a:hover {
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
+}
+
+#title {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-size: 35px;
+  color: var(--color-blue);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#caption {
+  padding: 15px;
+  background-color: var(--color-yellow);
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: var(--color-black);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#closed-caption {
+  margin-top: 3rem;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  flex-basis: 25%;
+}
+
+#left-container,
+#right-container {
+  margin: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#selectImg,
+#selectSize,
+#shuffle,
+#btn-reset,
+#count-text,
+#count-time,
+#highscore {
+  width: 10rem;
+  height: 3.5rem;
+  margin: 1.2rem 0;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background-color: var(--color-green);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#selectImg:hover,
+#selectSize:hover,
+#shuffle:hover,
+#btn-reset:hover,
+#count-text:hover,
+#count-time:hover,
+#highscore:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#validation img {
+  margin: 0 5px;
+  width: 100px;
+  height: 50px;
+}
+
+.pop-up {
+  border: 1px solid var(--color-blue);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.pop-up__btnBegin {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-image: url(../assets/img/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: var(--color-black);
+  font-size: 24px;
+  line-height: 1.4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--color-blue);
+}
+
+.pop-up__btnBegin:hover {
+  transform: scale(1.1);
+}
+
+.pop-up__header {
+  color: var(--color-white);
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#puzzle-container {
+  display: grid;
+  gap: 2px;
+  font-size: 32px;
+  padding: 0px;
+  position: relative;
+  place-items: center;
+}
+
+.content {
+  padding: 20px;
+  background-color: var(--color-blue);
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: var(--color-white);
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tile {
+  border: 2px solid var(--color-blue);
+  height: 96px;
+  width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.empty {
+  background-color: whitesmoke;
+}
+
+.moveablepiece {
+  border-color: var(--color-green);
+  color: var(--color-white);
+}
+
+@keyframes win-tile {
+  0% {
+    border: 2px solid var(--color-blue);
+  }
+  80% {
+    border: 4px solid var(--color-yellow);
+  }
+  90% {
+    transform: rotateZ(0deg);
+    border: 4px solid var(--color-yellow);
+  }
+  92% {
+    transform: rotateZ(5deg) scale(1.01);
+    border: 20px solid var(--color-yellow);
+  }
+  95% {
+    border: 4px solid var(--color-yellow);
+  }
+  100% {
+    transform: rotateZ(0deg) scale(1);
+    border: none;
+  }
+}
+
+@keyframes win-grid {
+  0% {
+    scale: 100%;
+  }
+  25% {
+    scale: 110%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#copyright {
+  padding: 0.3rem;
+  margin-top: 3rem;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#htmlvalidator, #cssvalidator {
+    display: inline-block;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.site-footer {
+  padding: 16px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
