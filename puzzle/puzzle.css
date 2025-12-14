@@ -411,9 +411,21 @@ footer {
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 1000;
+  padding: 10px;
+  background-color: var(--color-blue);
+  border: 2px bold var(--color-white);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#secret-gift:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 25px var(--color-yellow);
 }
 
 #secret-gift img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  display: block;
 }
