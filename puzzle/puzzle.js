@@ -236,6 +236,27 @@ document.addEventListener("DOMContentLoaded", function () {
   closePreview.addEventListener("click", function () {
     previewModal.classList.add("hidden");
   });
+  const bgImages = [
+    "../assets/background/background0.jpg",
+    "../assets/background/background1.jpg",
+    "../assets/background/background2.jpg",
+    "../assets/background/background3.jpg",
+    "../assets/background/background4.jpg",
+    "../assets/background/background5.jpg",
+    "../assets/background/background6.jpg",
+    "../assets/background/background7.jpg",
+    "../assets/background/background8.jpg",
+  ];
+
+  let bgIndex = 0;
+  const bg = document.getElementById("bg-slideshow");
+
+  bg.style.backgroundImage = `url(${bgImages[0]})`;
+
+  setInterval(() => {
+    bgIndex = (bgIndex + 1) % bgImages.length;
+    bg.style.backgroundImage = `url(${bgImages[bgIndex]})`;
+  }, 15000);
 });
 
 function beginWinAnimation() {
