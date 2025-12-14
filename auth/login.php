@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style2.css">
-  <title>User Log In</title>
+  <title>Christmas Fifteen Puzzle - Login</title>
 </head>
 
 <body>
