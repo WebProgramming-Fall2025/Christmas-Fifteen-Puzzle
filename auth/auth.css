@@ -53,8 +53,8 @@ body {
   .icon {
     width: 40px;
     height: 35px;
-    background-color: var(--header-bg);
-    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    border: 1px solid var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +104,6 @@ body {
   }
 
   a:hover {
-    color: var(--header-bg);
+    color: var(--page-bg);
     text-decoration: underline;
   }
