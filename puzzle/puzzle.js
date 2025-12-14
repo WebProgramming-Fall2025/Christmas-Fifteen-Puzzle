@@ -279,6 +279,23 @@ function notifyWin() {
   beginWinAnimation();
   document.getElementById("title").innerText = "Congrats! You won!";
   new Audio("../assets/music/musicWinner.mp3").play();
+
+  setTimeout(function () {
+    const secretGift = document.getElementById("secret-gift");
+    secretGift.classList.remove("hidden");
+
+    const giftModal = document.getElementById("giftModal");
+    const closeGiftModal = document.getElementById("closeGiftModal");
+
+    secretGift.addEventListener("click", function () {
+      giftModal.classList.remove("hidden");
+      secretGift.classList.add("hidden");
+    });
+
+    closeGiftModal.addEventListener("click", function () {
+      giftModal.classList.add("hidden");
+    });
+  }, 15000);
 }
 
 function startMusic() {
