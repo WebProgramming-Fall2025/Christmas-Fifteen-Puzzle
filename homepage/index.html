@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Fifteen Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__box">
+        <div class="header__logo" aria-label="Logo"></div>
+        <div id="title">Welcome to our Christmas Fifteen Puzzle!</div>
+        <nav class="header__navbar">
+          <!-- <a href="../puzzle/puzzle.html" target="_self" rel="noopener noreferrer" class="header__link">Start Playing</a> -->
+          <a href="../auth/login.php" class="header__link">Login</a>
+          <a href="../auth/user_registration.php" class="header__link">Register</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div id="content">
+        <marquee scrollamount="30">
+            <img src="../assets/img/image1.jpg" width="650px" height="400px"/>
+            <img src="../assets/img/image2.jpg" width="650px" height="400px"/>
+            <img src="../assets/img/image3.jpg" width="650px" height="400px"/>
+             <img src="../assets/img/image4.jpg" width="650px" height="400px"/>
+        </marquee>
+        <div class="content__group">
+          <h2>How to Play</h2>
+          <p>
+            The <strong>Fifteen Puzzle</strong> (also known as a Sliding Puzzle)
+            is a timeless classic that challenges your logic and patience. The
+            game consists of a <strong>4x4 grid</strong> of numbered tiles, with
+            <strong>one square left empty</strong>.
+          </p>
+          <p>Your goal is simple but tricky:</p>
+          <ol>
+            <li>
+              Rearrange the tiles so that they are in numerical order from
+              <strong>1 to 15</strong>, with the empty square at the
+              bottom-right corner.
+            </li>
+            <li>
+              To move a tile, slide any tile adjacent to the empty square into
+              the empty space.
+            </li>
+            <li>
+              Keep sliding tiles until the numbers are arranged correctly!
+            </li>
+          </ol>
+          <p>
+            Think you're up for the challenge? Click the button below to start
+            your journey!
+          </p>
+          <div class="button-group">
+            <a href="../puzzle/puzzle.html" class="btn">Start the Puzzle</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center site-footer">
+        <div id="copyright">
+            <p id="htmlvalidator">
+                <a href="http://validator.w3.org/check/referer"
+                ><img
+                    src="../assets/img/Valid_XHTML.png"
+                    alt="Valid XHTML 1.0!"
+                    height="31"
+                    width="88"
+                /></a>
+            </p>
+            <p id="cssvalidator">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img
+                    src="../assets/img/Valid_CSS.png"
+                    alt="Valid CSS!"
+                    height="31"
+                    width="88"
+                />
+                </a>
+            </p>
+
+            <p>Copyright &copy; Fall 2025</p>
+            <p>Georgia State University - Web Programming</p>
+            <p>Sophie Nguyen - Cristofer Herrera-Mejia - Karni Rathod</p>
+        </div>
+    </footer>
+  </body>
+</html>

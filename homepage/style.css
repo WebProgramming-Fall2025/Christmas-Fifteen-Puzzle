@@ -1,0 +1,137 @@
+/* Root Colors */
+:root {
+  --color-blue: rgb(110, 21, 17);
+  --color-green: rgb(0, 117, 73);
+  --color-yellow: rgb(2, 150, 100);
+  --color-red: rgb(230, 44, 49);
+  --color-black: #000000;
+  --color-white: rgb(253, 233, 206);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--color-blue);
+  color: var(--color-black);
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  padding: 1rem;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-blue);
+  border-radius: 20%;
+  background-image: url(../assets/img/logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#title {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--color-blue);
+}
+
+.header__navbar a {
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.header__navbar a:hover {
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
+}
+
+main {
+  padding: 2rem;
+}
+
+#content {
+  background-color: var(--color-yellow);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+ol {
+  text-align: left;
+  margin: 1rem auto;
+  display: inline-block;
+}
+
+ol li {
+  margin: 0.5rem 0;
+}
+
+.button-group .btn {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 0.4rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button-group .btn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
+}
+
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#copyright {
+  padding: 0.3rem;
+  margin-top: 3rem;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#htmlvalidator, #cssvalidator {
+    display: inline-block;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.site-footer {
+  padding: 16px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
