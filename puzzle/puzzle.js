@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var tiles;
   var started = 0;
   timerInterval = setInterval(timeFunction, 1000);
+  const howToPlayOriginalContent = document.getElementById("how-to-play").innerHTML;
 
   function setBackgroundImage(imageUrl) {
     for (let i = 0; i < tiles.length - 1; i++) {
@@ -119,6 +120,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("shuffle").disabled = true;
     imageSelect.disabled = true;
     sizeSelection.disabled = true;
+
+    const howToPlay = document.getElementById("how-to-play");
+    howToPlay.innerHTML = `<marquee scrollamount="30">
+            <img src="../assets/img/image1.jpg" width="650px" height="400px"/>
+            <img src="../assets/img/image2.jpg" width="650px" height="400px"/>
+            <img src="../assets/img/image3.jpg" width="650px" height="400px"/>
+             <img src="../assets/img/image4.jpg" width="650px" height="400px"/>
+        </marquee>`;
   };
 
   function moveCheck() {
@@ -196,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     document.getElementById("game-container").style.animation = ``;
     reloadBoard();
+    document.getElementById("how-to-play").innerHTML = howToPlayOriginalContent;
   });
   let count = 0;
   const countMove = document.getElementById("count-move");
