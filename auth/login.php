@@ -24,12 +24,12 @@
     <form action="login_submit.php" method="post">
  
       <div class="input_area">
-        <img src="../../AuthPro/img/email.png" alt="Email Icon" class="icon">
+        <img src="../assets/img/email.png" alt="Email Icon" class="icon">
         <input type="email" name="email" placeholder="Email" required>
       </div>
 
       <div class="input_area">
-        <img src="../../AuthPro/img/password.png" alt="Password Icon" class="icon">
+        <img src="../assets/img/password.png" alt="Password Icon" class="icon">
         <input type="password" name="password" placeholder="Password" required>
       </div>
 

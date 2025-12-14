@@ -20,42 +20,42 @@
 		<div class="error" id="fnameErr"></div>
 
       <div class="input_area">
-        <img src="../../AuthPro/img/name.png" alt="Name Icon" class="icon">
+        <img src="../assets/img/name.png" alt="Name Icon" class="icon">
         <input id="firstname" type="text" name="firstname" placeholder="First Name" required>
       </div>
 
       <div class="error" id="lnameErr"></div>
 
       <div class="input_area">
-        <img src="../../AuthPro/img/name.png" alt="Name Icon" class="icon">
+        <img src="../assets/img/name.png" alt="Name Icon" class="icon">
         <input id="lastname" type="text" name="lastname" placeholder="Last Name" required>
       </div>
 
       <div class="error" id="emailErr"></div>
 
       <div class="input_area">
-        <img src="../../AuthPro/img/email.png" alt="Email Icon" class="icon">
+        <img src="../assets/img/email.png" alt="Email Icon" class="icon">
         <input id="email" type="email" name="email" placeholder="Email" required>
       </div>
 
 	  <div class="error" id="usernameErr"></div>
 
       <div class="input_area">
-        <img src="../../AuthPro/img/username.png" alt="User Icon" class="icon">
+        <img src="../assets/img/username.png" alt="User Icon" class="icon">
         <input id="username" type="text" name="username" placeholder="Username" required>
       </div>
 
 	  <div class="error" id="passwordErr"></div>
 
       <div class="input_area">
-        <img src="../../AuthPro/img/password.png" alt="Password Icon" class="icon">
+        <img src="../assets/img/password.png" alt="Password Icon" class="icon">
         <input id="password" type="password" name="password" placeholder="Password" required>
       </div>
 
 	  <div class="error" id="confirmErr"></div>
 
       <div class="input_area">
-        <img src="../../AuthPro/img/confirm.png" alt=" Confirm Password Icon" class="icon">
+        <img src="../assets/img/confirm.png" alt=" Confirm Password Icon" class="icon">
         <input id="confirm" type="password" name="confirm" placeholder="Confirm Password" required>
       </div>
 
