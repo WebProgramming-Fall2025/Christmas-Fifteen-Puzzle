@@ -122,12 +122,38 @@ document.addEventListener("DOMContentLoaded", function () {
     sizeSelection.disabled = true;
 
     const howToPlay = document.getElementById("how-to-play");
-    howToPlay.innerHTML = `<marquee scrollamount="8">
-            <img src="../assets/img/image1.jpg" width="650px" height="400px"/>
-            <img src="../assets/img/image2.jpg" width="650px" height="400px"/>
-            <img src="../assets/img/image3.jpg" width="650px" height="400px"/>
-            <img src="../assets/img/image4.jpg" width="650px" height="400px"/>
-        </marquee>`;
+    howToPlay.innerHTML = `<marquee scrollamount="5">
+        <div class="fact-box">
+          <p>The tradition of Christmas trees began in 16th-century Germany.</p>
+        </div>
+        <div class="fact-box">
+          <p>“Jingle Bells” was originally written for Thanksgiving, not Christmas.</p>
+        </div>
+        <div class="fact-box">
+          <p>The world’s largest Christmas stocking measured over 106 feet long.</p>
+        </div>
+        <div class="fact-box">
+          <p>Santa Claus is inspired by St. Nicholas of Myra.</p>
+        </div>
+        <div class="fact-box">
+          <p>Rudolph first appeared in a 1939 Montgomery Ward booklet.</p>
+        </div>
+        <div class="fact-box">
+          <p>Electric Christmas lights became popular in the early 1900s.</p>
+        </div>
+        <div class="fact-box">
+          <p>Christmas was declared a US federal holiday in 1870.</p>
+        </div>
+        <div class="fact-box">
+          <p>“Silent Night” was composed in 1818 in Austria.</p>
+        </div>
+        <div class="fact-box">
+          <p>Poinsettias became a Christmas symbol after being introduced by Joel Poinsett.</p>
+        </div>
+        <div class="fact-box">
+          <p>The modern image of Santa was popularized by 1930s Coca‑Cola ads.</p>
+        </div>
+      </marquee>`;
   };
 
   function moveCheck() {
