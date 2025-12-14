@@ -1,8 +1,8 @@
 /* Root Colors */
 :root {
   --page-bg: rgb(2, 150, 100); 
-  --header-bg: rgb(110, 21, 17); 
-  --nav-bg: rgb(2, 150, 100);
+  --header-bg: rgb(253, 233, 206); 
+  --nav-bg: rgb(253, 233, 206);
   --accent: rgb(230, 44, 49); 
   --accent-hover-text: rgb(0, 117, 73); 
   --text-color: rgb(253, 233, 206);
