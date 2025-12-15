@@ -23,7 +23,7 @@
 
 ## How to Setup:
 
-Please download the folder [assets]() and put it under the root folder. Then, run this file `Christmas-Fifteen-Puzzle/homepage/index.html`.
+Please download the folder [assets](https://drive.google.com/file/d/1W-TlHXxa52q0dJfNhwdZIqXDh1F5WAoy/view?usp=sharing) and put it under the root folder. Then, run this file `Christmas-Fifteen-Puzzle/homepage/index.html`.
 
 
 ## Key Features:
