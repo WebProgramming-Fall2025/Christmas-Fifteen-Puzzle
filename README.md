@@ -8,11 +8,11 @@
 
 ## Materials:
 
-- [Proposal]()
-- [Slides]()
-- [Website]()
+- [Proposal](https://drive.google.com/file/d/1JSzUx9ca-q43PROonzMlYfApQi8HPGhd/view?usp=drive_link)
+- [Slides](https://docs.google.com/presentation/d/1vgL44gUwEz3H1BNx3jhFw44zeO5yxNauHNYnIc-nqAg/edit?usp=sharing)
+- [Website](https://codd.cs.gsu.edu/~nnguyen177/Christmas-Fifteen-Puzzle/homepage/index.html)
 - [Demo]()
-- [Development Journal]()
+- [Development Journal](https://drive.google.com/file/d/11oPdKGorGjffuHyXuHNQb0f3EC6RmK74/view?usp=sharing)
 
 ## Project Summary:
 
